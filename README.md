@@ -43,10 +43,20 @@ How to use welcome is default page
 In Routes.rb ,insert this top of page and delete "get '/welcome' ...."
  
 ```ruby
-root to:'pages#welcome' 
+root to::'pages#welcome' 
 ```
 
 
+## Build The Blog
+CRUD (Create, Read, Update, Delete) -> Post
 
+Create field for Post ( Tittle(string) and Content(test)) with
+```ruby
+rails generate scaffold Post tittle:string content:text
+```
 
-
+Megration Pending Error
+Run in cmd
+```sh
+rails db::migrate RAILS_ENV=development
+```
