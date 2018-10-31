@@ -43,7 +43,7 @@ How to use welcome is default page
 In Routes.rb ,insert this top of page and delete "get '/welcome' ...."
  
 ```ruby
-root to::'pages#welcome' 
+root to:'pages#welcome' 
 ```
 
 
